@@ -1,0 +1,122 @@
+body{
+    background-color: rgb(240,240,240);
+}
+
+.loader{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    float: left;
+    margin: 0;
+    color: rgb(100,100,250);
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+}
+
+.parent-loader{
+    display: block;
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+/***********************************************/
+
+.ld1{
+    animation: border1 1.5s linear infinite;
+}
+
+.ld2{
+    animation: border2 1.5s linear infinite;
+}
+
+.ld3{
+    animation: border3 1.5s linear infinite;
+}
+
+.ld4{
+    animation: border4 1.5s linear infinite;
+}
+
+.ld5{
+    animation: border5 1.5s linear infinite;
+}
+
+/***********************************************/
+
+@keyframes border1{
+    0%{
+        border-top: 5px solid rgb(100,100,250);
+        font-size: 30px;
+    }
+    10%{
+        border-right: 5px solid rgb(100,100,250);
+        border-top: 0;
+    }
+    20%{
+        border-right: 0;
+        font-size: 0;
+    }
+}
+
+@keyframes border2{
+    20%{
+        border-bottom: 5px solid rgb(100,100,250);
+        font-size: 30px;
+    }
+    30%{
+        border-right: 5px solid rgb(100,100,250);
+        border-bottom: 0;
+    }
+    40%{
+        border-right: 0;
+        font-size: 0;
+    }
+}
+
+@keyframes border3{
+    40%{
+        border-top: 5px solid rgb(100,100,250);
+        font-size: 30px;
+    }
+    50%{
+        border-right: 5px solid rgb(100,100,250);
+        border-top: 0;
+    }
+    60%{
+        border-right: 0;
+        font-size: 0;
+    }
+}
+
+@keyframes border4{
+    60%{
+        border-bottom: 5px solid rgb(100,100,250);
+        font-size: 30px;
+    }
+    70%{
+        border-right: 5px solid rgb(100,100,250);
+        border-bottom: 0;
+    }
+    80%{
+        border-right: 0;
+        font-size: 0;
+    }
+}
+
+@keyframes border5{
+    80%{
+        border-top: 5px solid rgb(100,100,250);
+        font-size: 30px;
+    }
+    90%{
+        border-top: 0;
+        font-size: 0;
+    }
+}
